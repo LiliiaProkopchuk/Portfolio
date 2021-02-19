@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+
+body{
+    font-family: Champagne-limousines;
+    text-transform: uppercase;
+    color: #faf0ed;
+    text-align: center;
+    @media screen and(max-width:1200px){
+        &.lock{
+            overflow: hidden;
+        }
+    }
+}
+ul,
+li{
+    list-style: none;
+}
+li{
+    overflow: hidden;
+}
+a{
+    color: #faf0ed;
+    text-decoration: none;
+    &:focus {
+        outline: none;
+    }
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+h2 {
+    font-weight: 500;
+}

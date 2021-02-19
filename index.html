@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Susanna</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="fonts/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="top">
+      <div class="container">
+        <div class="top__box">
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <nav class="mobile_menu">
+            <ul class="header_list">
+              <li><a href="#about" class="header_link nav_link">О нас</a></li>
+              <li><a href="#catalog" class="header_link nav_link">Susanna Flowers</a></li>
+              <li><a href="#services" class="header_link nav_link">Услуги</a></li>
+              <li><a href="#wedding" class="header_link nav_link">Свадьбы</a></li>
+              <li><a href="#newYear" class="header_link nav_link">Новый год </a></li>
+              <li><a href="#team" class="header_link nav_link">Наша команда</a></li>
+              <li><a href="#news" class="header_link nav_link">Блог</a></li>
+              <li><a href="#footer" class="header_link nav_link">Контакты</a></li>
+            </ul>
+          </nav>
+          <a href="#"><div class="basket">Корзина</div></a>
+        </div>
+        </div>
+    </div>
+    <div class="menu">
+      <div class="container_menu">
+        <div class="header_body">
+          <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="" style="height: 50px;width: 75px;"></a>
+            <a href="#">Susanna</a>
+          </div>
+          <nav class="header_menu">
+            <ul class="header_list">
+              <li><a href="#about" class="header_link nav_link">О нас</a></li>
+              <li><a href="#catalog" class="header_link nav_link">Susanna Flowers</a></li>
+              <li><a href="#services" class="header_link nav_link">Услуги</a></li>
+              <li><a href="#wedding" class="header_link nav_link">Свадьбы</a></li>
+              <li><a href="#newYear" class="header_link nav_link">Новый год </a></li>
+              <li><a href="#team" class="header_link nav_link">Наша команда</a></li>
+              <li><a href="#news" class="header_link nav_link">Блог</a></li>
+              <li><a href="#footer" class="header_link nav_link">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about" id="about">
+      <div class="about__border">
+        <div class="container">
+          <div class="about__bg">
+            <h2 class="about__title">О нас</h2>
+            <div class="about__text">
+              Теория наивного и сентиментального искусства продолжает валентный электрон. 
+              Композиционно-речевая структура аллитерирует конструктивный интеракционизм. 
+              Стратификация текстологически поглощает композиционный страх. 
+              Супермолекула, как бы это ни казалось парадоксальным, понимает ионный мимезис. 
+              Символический метафоризм, так или иначе, возбуждает бромид серебра. 
+              Упаривание выстраивает голубой гель.
+              Атомный радиус непосредственно иллюстрирует строфоид. 
+              Супраструктура монотонно иллюстрирует хорал, но известны случаи 
+              прочитывания содержания приведённого отрывка иначе. Белок аннигилирует 
+              сюжетный гендер. Окислитель, как принято считать, имитирует экзистенциальный 
+              автоматизм, именно об этом комплексе движущих сил писал З.Фрейд в теории сублимации. 
+              Эмпирическая история искусств активирует бесцветный классицизм.
+            </div>
+            <button class="about__img">
+              <img src="img/icon.png" alt="Icon">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <h2 class="catalog__title">Susanna Flowers</h2>
+        <div class="catalog__slider">
+          <div class="slider__item"><a href="#"><img src="img/block_1.png" alt=""></a></div>
+          <div class="slider__item"><a href="#"><img src="img/block_2.png" alt=""></a></div>
+          <div class="slider__item"><a href="#"><img src="img/block_3.png" alt=""></a></div>
+          <div class="slider__item"><a href="#"><img src="img/block_1.png" alt=""></a></div>
+          <div class="slider__item"><a href="#"><img src="img/block_2.png" alt=""></a></div>
+          <div class="slider__item"><a href="#"><img src="img/block_3.png" alt=""></a></div>
+        </div>
+        <div class="arrow prev" onclick="PrevSlideCatalog()"></div>
+        <div class="arrow next" onclick="NextSlideCatalog()"></div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="services__title">Услуги</h2>
+        <div class="services__slider">
+          <div class="slider__item-services"><a href="#"><img src="img/service_1.png" alt=""></a>
+          <div class="services__text">
+            <a href="#"> Отношение к современности аллитерирует былинный закон исключённого третьего. <span>Далее...</span></a>
+          </div>
+        </div>
+          <div class="slider__item-services"><a href="#"><img src="img/service_2.png" alt=""></a>
+            <div class="services__text">
+              <a href="#"> Синтагма индуцирует сенсибельный амфибрахий, tertium nоn datur. Текстуальность изоморфна времени. <span>Далее...</span></a>
+            </div>
+          </div>
+          <div class="slider__item-services"><a href="#"><img src="img/service_3.png" alt=""></a>
+            <div class="services__text">
+              <a href="#">  Согласно мнению известных философов, современная ситуация преобразует анжамбеман, открывая новые горизонты.  <span>Далее...</span></a>
+            </div>
+          </div>
+          <div class="slider__item-services"><a href="#"><img src="img/service_1.png" alt=""></a>
+            <div class="services__text">
+              <a href="#"> Отношение к современности аллитерирует былинный закон исключённого третьего. <span>Далее...</span></a>
+            </div>
+          </div>
+          <div class="slider__item-services"><a href="#"><img src="img/service_2.png" alt=""></a>
+            <div class="services__text">
+              <a href="#"> Синтагма индуцирует сенсибельный амфибрахий, tertium nоn datur. Текстуальность изоморфна времени. <span>Далее...</span></a>
+            </div>
+          </div>
+          <div class="slider__item-services"><a href="#"><img src="img/service_3.png" alt=""></a>
+            <div class="services__text">
+              <a href="#">  Согласно мнению известных философов, современная ситуация преобразует анжамбеман, открывая новые горизонты.  <span>Далее...</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="arrow prev" onclick="PrevSlideService()"></div>
+        <div class="arrow next" onclick="NextSlideService()"></div>
+      </div>
+    </section>
+    <section class="wedding" id="wedding">
+      <div class="container">
+        <h2 class="wedding__title">Susanna <span>Wedding</span></h2>
+        <div class="links-box">
+          <a href="#">
+            <div class="box__item">
+              <div class="item__img">
+                <img src="img/wedding_1.png" alt="Image Wedding">
+              </div>
+              <div class="item__text">Букет невесты</div>
+              <div class="item__icon">
+                <img src="img/wedding_icon.png" alt="Icon">
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box__item">
+              <div class="item__img">
+                <img src="img/wedding_2.png" alt="Image Wedding">
+              </div>
+              <div class="item__text">Свадебное оформление</div>
+              <div class="item__icon">
+                <img src="img/wedding_icon.png" alt="Icon">
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box__item">
+              <div class="item__img">
+                <img src="img/wedding_3.png" alt="Image Wedding">
+              </div>
+              <div class="item__text">Бутоньерки</div>
+              <div class="item__icon">
+                <img src="img/wedding_icon.png" alt="Icon">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="newYear" id="newYear">
+      <div class="container">
+        <h2 class="newYear__title">Susanna <span>New Year</span></h2>
+        <div class="links-box">
+          <a href="#">
+            <div class="box__item">
+              <div class="item__img">
+                <img src="img/new-year_1.png" alt="Image Wedding">
+              </div>
+              <div class="item__text">Новогоднее оформление</div>
+              <div class="item__icon">
+                <img src="img/new-year_icon.png" alt="Icon">
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box__item">
+              <div class="item__img">
+                <img src="img/new-year_2.png" alt="Image Wedding">
+              </div>
+              <div class="item__text">Игрушки и декор</div>
+              <div class="item__icon">
+                <img src="img/new-year_icon.png" alt="Icon">
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box__item">
+              <div class="item__img">
+                <img src="img/new-year_3.png" alt="Image Wedding">
+              </div>
+              <div class="item__text">Подарки</div>
+              <div class="item__icon">
+                <img src="img/new-year_icon.png" alt="Icon">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="team" id="team">
+      <div class="container">
+        <h2 class="team__title">Наша команда</h2>
+        <div class="team__slider">
+          <div class="slider__item-team"><a href="#"><img src="img/team_1.png" alt=""></a>
+          <div class="team__text">
+            <a href="#"> 
+              <div class="team__name">Илона Апрельская</div>
+              <div class="team__position">Художественное опосредование методически дает верлибр.</div>
+            </a>
+          </div>
+          </div>
+          <div class="slider__item-team"><a href="#"><img src="img/team_2.png" alt=""></a>
+            <div class="team__text">
+              <a href="#"> 
+                <div class="team__name">Тая Вензер</div>
+                <div class="team__position">Благодаря радиоактивности ученые убедились, что матрица возможна.</div>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item-team"><a href="#"><img src="img/team_3.png" alt=""></a>
+            <div class="team__text">
+              <a href="#"> 
+                <div class="team__name">Матвей Васильев</div>
+                <div class="team__position">Эмпирическая история искусств активирует бесцветный классицизм.</div>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item-team"><a href="#"><img src="img/team_1.png" alt=""></a>
+            <div class="team__text">
+              <a href="#"> 
+                <div class="team__name">Илона Апрельская</div>
+                <div class="team__position">Художественное опосредование методически дает верлибр.</div>
+              </a>
+            </div>
+          </div>
+          <div class="slider__item-team"><a href="#"><img src="img/team_2.png" alt=""></a>
+              <div class="team__text">
+                <a href="#"> 
+                  <div class="team__name">Тая Вензер</div>
+                  <div class="team__position">Благодаря радиоактивности ученые убедились, что матрица возможна.</div>
+                </a>
+              </div>
+          </div>
+          <div class="slider__item-team"><a href="#"><img src="img/team_3.png" alt=""></a>
+              <div class="team__text">
+                <a href="#"> 
+                  <div class="team__name">Матвей Васильев</div>
+                  <div class="team__position">Эмпирическая история искусств активирует бесцветный классицизм.</div>
+                </a>
+              </div>
+          </div>
+        </div>
+        <div class="arrow prev" onclick="PrevSlideTeam()"></div>
+        <div class="arrow next" onclick="NextSlideTeam()"></div>
+      </div>
+    </section>
+    <section class="news" id="news">
+      <div class="container">
+        <h2 class="news__title">Новости</h2>
+        <div class="news__slider">
+        <div class="slider__item-news"><a href="#"><img src="img/news_1.png" alt=""></a>
+          <div class="news__text">
+            <a href="#"> Диахронический подход отчуждает незначительный ионообменник, но иногда протекают со взрывом. Богатство мировой литературы от Платона до Ортеги-и-Гассета свидетельствует о том, что литургическая драма.
+              монотонно выбирает суггестивный сангвиник. Воспитание, например, окрашивает глубокий атомный радиус. </a>
+          </div>
+        </div>
+        <div class="slider__item-news"><a href="#"><img src="img/news_2.png" alt=""></a>
+          <div class="news__text">
+            <a href="#"> Пластмасса, за счет использования параллелизмов и повторов на разных языковых уровнях, просветляет стерический конформизм. Диахрония, так или иначе, вероятна. Интермедиат огнеопасно отражает филосовский комплекс.
+              атрибуции интермедиат. </a>
+          </div>
+        </div>
+        <div class="slider__item-news"><a href="#"><img src="img/news_3.png" alt=""></a>
+          <div class="news__text">
+            <a href="#"> Если предварительно подвергнуть объекты длительному вакуумированию, то зачин изящно понимает резкий абстракционизм. Мелькание мыслей выделяет методологический художественный талант, и это придает ему свое звучание.
+              , свой характер. </a>
+          </div>
+        </div>
+        <div class="slider__item-news"><a href="#"><img src="img/news_1.png" alt=""></a>
+          <div class="news__text">
+            <a href="#"> Диахронический подход отчуждает незначительный ионообменник, но иногда протекают со взрывом. Богатство мировой литературы от Платона до Ортеги-и-Гассета свидетельствует о том, что литургическая драма.
+              монотонно выбирает суггестивный сангвиник. Воспитание, например, окрашивает глубокий атомный радиус. </a>
+          </div>
+        </div>
+        <div class="slider__item-news"><a href="#"><img src="img/news_2.png" alt=""></a>
+          <div class="news__text">
+            <a href="#"> Пластмасса, за счет использования параллелизмов и повторов на разных языковых уровнях, просветляет стерический конформизм. Диахрония, так или иначе, вероятна. Интермедиат огнеопасно отражает филосовский комплекс.
+              атрибуции интермедиат. </a>
+          </div>
+        </div>
+        <div class="slider__item-news"><a href="#"><img src="img/news_3.png" alt=""></a>
+          <div class="news__text">
+            <a href="#"> Если предварительно подвергнуть объекты длительному вакуумированию, то зачин изящно понимает резкий абстракционизм. Мелькание мыслей выделяет методологический художественный талант, и это придает ему свое звучание.
+              , свой характер. </a>
+          </div>
+        </div>
+        </div>
+        <div class="arrow prev" onclick="PrevSlideNews()"></div>
+        <div class="arrow next" onclick="NextSlideNews()"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer__liner">
+        <div class="liner__links">
+          <div class="links__block_1">
+            <ul>
+              <li><a href="#">Susanna Flowers</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Свадьбы</a></li>
+              <li><a href="#">Новый Год</a></li>
+            </ul>
+          </div>
+          <div class="links__block_2">
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Помощь</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="liner__logo">
+          <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="" style="height: 50px;width: 75px;"></a>
+            <a href="#" class="logo__text">Susanna</a>
+          </div>
+          <div class="subtext">&copy; 2016 Gloria Flowers Decor Studio Все права защищены</div>
+        </div>
+        <div class="liner__social">
+          <div class="social__links">
+            <ul>
+              <li><a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook"></span></a></li>
+              <li><a href="https://www.youtube.com/" target="_blank"><span class="icon-youtube"></span></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+          <div class="social__phone"><a href="tel:+380442855264" > (044) 285 52 64</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
