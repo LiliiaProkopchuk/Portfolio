@@ -98,6 +98,7 @@ header{
                         a{
                             color: #fff;
                             letter-spacing: 3px;
+                            font-size: 24px;
                         }
                     }
                 }
@@ -141,6 +142,12 @@ header{
                     padding: 50px 0;
                     @media screen and(max-width:1200px){
                         font-size: 80px;
+                    }
+                    @media screen and(max-width:600px){
+                        font-size: 60px;
+                    }
+                    @media screen and(max-width:400px){
+                        font-size: 45px;
                     }
                     a{
                         color: rgb(228, 192, 226);
@@ -227,6 +234,9 @@ header{
         border: 1px solid #fff;
         max-width: 1000px;
         margin: 0 auto;
+        @media screen and(max-width:1050px){
+            margin: 0 20px;
+        }
         .about__bg{
             margin: 10px 0;
             background-color: rgba(255, 255, 255, 0.8);
@@ -264,10 +274,6 @@ header{
     }
 }
 .catalog, .services, .team, .news {
-    .slick-slide {
-        width: 304px; 
-        margin: 0 15px;
-    }
     .prev, .prev::before, .next, .next::before{
         position: absolute;
         cursor: pointer;
@@ -341,6 +347,10 @@ header{
     .container{
         position: relative;
     }
+    .item__img{
+         margin: 0 auto;
+         width: 304px;
+    }
 }
 .services{
     color: #5c6f7c;
@@ -377,7 +387,8 @@ header{
 .wedding, .newYear {
     .links-box{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
         a{
             position: relative;
             border-radius: 10px;
@@ -387,6 +398,9 @@ header{
             .box__item{
                 max-width: 330px;
                 padding: 12px 20px 50px;
+                @media screen and(max-width:400px){
+                    padding: 12px 10px 50px;
+                }
                 .item__text{
                     font-size: 30px;
                     text-transform: none;
@@ -513,10 +527,16 @@ header{
 footer {
     background-color: #5c6f7c;
     padding: 52px 0;
+    @media screen and(max-width:800px){
+        padding: 20px;
+    }
     .container {
         .footer__liner {
             display: flex;
             justify-content: space-between;
+            @media screen and(max-width:800px){
+                display: block;
+            }
             .liner__links {
                 display: flex;
                 justify-content: space-between;
@@ -524,6 +544,12 @@ footer {
                 line-height: 22px;
                 font-weight: 700;
                 text-align: left;
+                .links__block_1 {
+                    margin-right: 65px;
+                }
+                @media screen and(max-width:800px){
+                    display: none;
+                }
                 li {
                     a {
                         position: relative;
@@ -551,12 +577,13 @@ footer {
                         }
                     }
                 }
-                .links__block_1 {
-                    margin-right: 65px;
-                }
             }
             .liner__logo {
                 max-width: 210px;
+                @media screen and(max-width:800px){
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                }
                 .logo {
                     display: flex;
                     justify-content: center;
@@ -579,6 +606,10 @@ footer {
                         display: flex;
                         justify-content: flex-end;
                         width: 200px;
+                        @media screen and(max-width:800px){
+                            margin: 0 auto;
+                            justify-content: center;
+                        }
                         li {
                             background-color: #fff;
                             width: 40px;

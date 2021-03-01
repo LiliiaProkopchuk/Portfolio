@@ -40,3 +40,8 @@ a{
 h2 {
     font-weight: 500;
 }
+@media screen and(max-width:1200px){
+    .arrow {
+        display: none;
+    }
+}
