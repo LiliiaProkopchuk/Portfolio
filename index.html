@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liliia Prokopchuk</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li><a data-goto=".home" href="#" class="menu__link">Home</a></li>
+                        <li><a data-goto=".about" href="#" class="menu__link">About me</a></li>
+                        <li><a data-goto=".portfolio" href="#" class="menu__link">Portfolio</a></li>
+                        <li><a data-goto=".contacts" href="#" class="menu__link">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="home">
+            <div class="container">
+                <h1 class="_anim-items _anim-no-hide">Liliia Prokopchuk</h1>
+                <h3>Front-end developer, 31 years old, Nikolaev</h3>
+                <div class="home__img">
+                    <img src="images/lilia.png" alt="My photo" style="width:245px; height:400px" class="_anim-items _anim-no-hide">
+                </div>
+                <div class="scrollDown">
+                    <a href="#about"><img src="images/arrow-down-sketched-variant-svgrepo-com.svg" alt="Arrow down"></a>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <h2>About me</h2>
+                <p>Hi, I'm Lilia - Front-end developer from Nikolaev.
+                    I am interested in layout and everything related to it.</p>
+                <p>I completed the Front-End Development courses at the Beetroot Academy.</p>
+                <p>Unfortunately, there is no work experience in this area at the moment. 
+                    I am working on replenishing the portfolio and replenishing knowledge in this direction.</p>
+                <p>
+                    <ul class="skills__list">Successfully graduated Front end Developer course and got skills working with the following:
+                        <li class="_anim-items _anim-no-hide skills__link">HTML;</li>
+                        <li class="_anim-items _anim-no-hide skills__link">CSS / LESS / SCSS;</li>
+                        <li class="_anim-items _anim-no-hide skills__link">Flexbox;</li>
+                        <li class="_anim-items _anim-no-hide skills__link">Grid layout;</li>
+                        <li class="_anim-items _anim-no-hide skills__link">JavaScript, jQuery;</li>
+                        <li class="_anim-items _anim-no-hide skills__link">Git, Github;</li>
+                        <li class="_anim-items _anim-no-hide skills__link">Gulp;</li>
+                        <li class="_anim-items _anim-no-hide skills__link">Visual Studio Code;</li>
+                        <li class="_anim-items _anim-no-hide skills__link">Familiarity with Photoshop and Figma</li>
+                    </ul>
+                </p>
+                <p>Ready to implement excellent projects
+                    with wonderful people.</p>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container swiper-container">
+                <h2>Portfolio</h2>
+                <ul class="portfolio__list swiper-wrapper">
+                    <li class="portfolio__link swiper-slide">
+                        <a href="https://liliiaprokopchuk.github.io/Alma/" class="portfolio__page" target="_blanck">
+                            <div class="portfolio__img">
+                                <img src="images/pages/alma.jpg" alt="Alma Page" style="width: 1000px; height: 570px;">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__link swiper-slide">
+                        <a href="https://liliiaprokopchuk.github.io/Cake/" class="portfolio__page" target="_blanck">
+                            <div class="portfolio__img">
+                                <img src="images/pages/cake.jpg" alt="Cake page" class="portfolio__img" style="width: 1000px; height: 570px;">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__link swiper-slide">
+                        <a href="https://liliiaprokopchuk.github.io/Susanna/" class="portfolio__page" target="_blanck">
+                            <div class="portfolio__img">
+                                <img src="images/pages/susanna.jpg" alt="Susanna page" class="portfolio__img" style="width: 1000px; height: 570px;">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__link swiper-slide">
+                        <a href="https://liliiaprokopchuk.github.io/MainLead/" class="portfolio__page" target="_blanck">
+                            <div class="portfolio__img">
+                                <img src="images/pages/mainlead.jpg" alt="MainLead page" class="portfolio__img" style="width: 1000px; height: 570px;">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contacts">
+        <div class="container">
+            <h2>Contacts</h2>
+            <ul class="contact_list">
+                <li class="contact_link _anim-items _anim-no-hide"><a href="linkedin.com/in/лилия-прокопчук-16a8091b2" target="_blank"><img src="images/linkedin-svgrepo-com.svg" alt="" class="img_contact"></a></li>
+                <li class="contact_link _anim-items _anim-no-hide"><a href="mailto:liliiaprokopchuk@gmail.com"><img src="images/mail-email-svgrepo-com.svg" alt="" class="img_contact"></a></li>
+                <li class="contact_link _anim-items _anim-no-hide"><a href="tel:+380638687713"><img src="images/telephone-svgrepo-com.svg" alt="" class="img_contact"></a></li>
+                <li class="contact_link _anim-items _anim-no-hide"><a href="https://www.instagram.com/lelka_p/" target="_blank"><img src="images/instagram-2016-logo-svgrepo-com.svg" alt="" class="img_contact"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper('.swiper-container', {
+    loop: true,
+
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    slidesPerView: 1, 
+  
+  });
+      </script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
