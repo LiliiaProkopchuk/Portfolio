@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liliia Prokopchuk</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav_icon/favicon-16x16.png">
+    <link rel="manifest" href="images/fav_icon/site.webmanifest">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
     </style>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -37,7 +41,7 @@
                 <h1 class="_anim-items _anim-no-hide">Liliia Prokopchuk</h1>
                 <h3>Front-end developer, 31 years old, Nikolaev</h3>
                 <div class="home__img">
-                    <img src="images/lilia.png" alt="My photo" style="width:245px; height:400px" class="_anim-items _anim-no-hide">
+                    <img src="images/lilia.png" alt="My photo" class="_anim-items _anim-no-hide">
                 </div>
                 <div class="scrollDown">
                     <a href="#about"><img src="images/arrow-down-sketched-variant-svgrepo-com.svg" alt="Arrow down"></a>
@@ -70,41 +74,39 @@
             </div>
         </section>
         <section class="portfolio">
-            <div class="container swiper-container">
+            <div class="container swiper">
                 <h2>Portfolio</h2>
                 <ul class="portfolio__list swiper-wrapper">
                     <li class="portfolio__link swiper-slide">
                         <a href="https://liliiaprokopchuk.github.io/Alma/" class="portfolio__page" target="_blanck">
                             <div class="portfolio__img">
-                                <img src="images/pages/alma.jpg" alt="Alma Page" style="width: 1000px; height: 570px;">
+                                <img src="images/pages/alma.jpg" alt="Alma Page">
                             </div>
                         </a>
                     </li>
                     <li class="portfolio__link swiper-slide">
                         <a href="https://liliiaprokopchuk.github.io/Cake/" class="portfolio__page" target="_blanck">
                             <div class="portfolio__img">
-                                <img src="images/pages/cake.jpg" alt="Cake page" class="portfolio__img" style="width: 1000px; height: 570px;">
+                                <img src="images/pages/cake.jpg" alt="Cake page" class="portfolio__img">
                             </div>
                         </a>
                     </li>
                     <li class="portfolio__link swiper-slide">
                         <a href="https://liliiaprokopchuk.github.io/Susanna/" class="portfolio__page" target="_blanck">
                             <div class="portfolio__img">
-                                <img src="images/pages/susanna.jpg" alt="Susanna page" class="portfolio__img" style="width: 1000px; height: 570px;">
+                                <img src="images/pages/susanna.jpg" alt="Susanna page" class="portfolio__img">
                             </div>
                         </a>
                     </li>
                     <li class="portfolio__link swiper-slide">
                         <a href="https://liliiaprokopchuk.github.io/MainLead/" class="portfolio__page" target="_blanck">
                             <div class="portfolio__img">
-                                <img src="images/pages/mainlead.jpg" alt="MainLead page" class="portfolio__img" style="width: 1000px; height: 570px;">
+                                <img src="images/pages/mainlead.jpg" alt="MainLead page" class="portfolio__img">
                             </div>
                         </a>
                     </li>
                 </ul>
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
         </section>
     </main>
@@ -120,31 +122,31 @@
             </ul>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>     
+        const swiper = new Swiper('.swiper', {
+            loop: true,
 
-    <script type="module">
-        import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
-      
-        const swiper = new Swiper('.swiper-container', {
-    loop: true,
+            keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+            pageUpDown: true,
+        },
 
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-        pageUpDown: true,
-    },
+            pagination: {
+            el: '.swiper-pagination',
+            type: "progressbar",
+        },
 
-    pagination: {
-        el: '.swiper-pagination',
-    },
+            slidesPerView: 'auto', 
+
+            breakpoints: {
+                1100: {
+                    navigation: false,
+                }
+            },
   
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    slidesPerView: 1, 
-  
-  });
+      });
       </script>
     <script src="js/main.min.js"></script>
 </body>
